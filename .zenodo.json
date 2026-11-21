@@ -1,29 +1,23 @@
 {
-  "title": "EUROCONTROL Panel Construction: audit code and five-rule protocol",
-  "description": "Reproducibility package for 'Small-State Aviation Carbon Dynamics: Data Quality, Code Collisions, and Panel Construction in EUROCONTROL Emission Statistics'. Contains the data download script, cleaning routines, the audit code reproducing every table and figure in the paper, and the recommended five-rule panel construction protocol for the EUROCONTROL state-level CO2 emission statistics (2010-2026). Documents and quantifies five construction hazards: two STATE_CODE collisions (LY: Serbia/Montenegro; LS: Switzerland/Liechtenstein), late panel entrants (Latvia 2011, Georgia 2014, Estonia 2018), microstate log-scale leverage (Monaco), persistent estimation flags, and name-encoding traps.",
+  "title": "Reproduction package: Processing errors, population definitions and analytic choices in EUROCONTROL state-level aviation CO2 statistics",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "description": "Reproduction package for: Yurtsever, Ö. Processing errors, population definitions and analytic choices in public aviation CO2 statistics: a layered robustness audit of EUROCONTROL state-level data (manuscript under review). The package contains the exact input vintage (17 EUROCONTROL state-level CO2 files downloaded on 4 July 2026, with SHA-256 hashes), the analysis code that reproduces every number, table and figure (processing-error audit and stress tests, a 256-specification multiverse on corrected data, influence diagnostics, annual panel regressions, a pre-pandemic comparison, emissions per departure and volatility analyses), an identifier crosswalk, automated tests and a pinned software environment. Version 2.0 replaces version 1, whose description and contents referred to an earlier draft.",
   "creators": [
     {
-      "name": "Yurtsever, \u00d6zg\u00fcr",
-      "affiliation": "Istanbul Ni\u015fanta\u015f\u0131 University, Civil Aviation School",
+      "name": "Yurtsever, Özgür",
+      "affiliation": "Istanbul Nişantaşı University, Civil Aviation School",
       "orcid": "0009-0008-7359-2672"
     }
   ],
-  "upload_type": "software",
-  "license": "MIT",
   "keywords": [
-    "data quality",
-    "panel construction",
-    "EUROCONTROL",
     "aviation emissions",
-    "small states",
-    "reproducibility",
-    "CO2"
+    "EUROCONTROL",
+    "data provenance",
+    "multiverse analysis",
+    "specification curve",
+    "reproducibility"
   ],
-  "related_identifiers": [
-    {
-      "identifier": "https://ansperformance.eu/reference/dataset/emissions/",
-      "relation": "isDerivedFrom",
-      "resource_type": "dataset"
-    }
-  ]
+  "license": "MIT",
+  "access_right": "open"
 }

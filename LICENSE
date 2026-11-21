@@ -20,5 +20,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-NOTE ON DATA: The EUROCONTROL "CO2 emissions by State" dataset is the property
-of EUROCONTROL and is not covered by this licence. See data/README.md.
+The files in data/raw/ are EUROCONTROL data (Aviation Intelligence Portal,
+https://ansperformance.eu/) and are not covered by this licence.

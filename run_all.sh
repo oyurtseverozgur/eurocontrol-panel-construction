@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# One-command reproduction of every table and figure in the paper.
+# Reproduce every number, table and figure of the paper from data/raw/.
 set -e
-echo "== [1/3] Downloading EUROCONTROL data (or verifying data/raw/) =="
-python src/download_data.py
-echo "== [2/3] Building panels under the five-rule protocol =="
-python src/pipeline_divergence.py
-echo "== [3/3] Reproducing paper quantifications =="
-python src/audit_data_note.py
-echo "Done. See output/ for figures and tables."
+python analysis.py     # stops if data/raw/ differs from data/raw/SHA256SUMS.txt
+python figures.py      # out/Fig1-Fig6 (TIFF 600 dpi + PNG)
+python build_esm.py    # Online Resources 1-3 (ESM_1-3.xlsx)
+pytest -q tests        # 10 transformation tests

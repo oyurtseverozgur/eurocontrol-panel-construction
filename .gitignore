@@ -1,8 +1,5 @@
+out/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
-data/raw/*.csv
-data/raw/*.xlsx
-output/*
-!output/.gitkeep
-.DS_Store
+ESM_*.xlsx
